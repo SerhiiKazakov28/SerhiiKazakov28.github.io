@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Персонажі | Dead by Daylight</title>
+		<link href="fonts/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="images/favicon.png">
+  </head>
+  <body background="images/bg.jpg">
+    <nav class="navbar navbar-dark nav-underline navbar-style fixed-top px-3 navbar-expand-lg">
+      <div class="container-fluid justify-content-center gap-5 px-5">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/navbar_logo.png" alt="Logo" class="d-inline-block">
+        </a>
+        <ul class="navbar-nav gap-5">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Головна</a>
+            </li>
+            <li class="nav-item dropdown-center">
+              <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Гра</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="characters.html">Персонажі</a></li>
+                <li><a class="dropdown-item" href="maps.html">Мапи</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="community.html">Спільнота</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <div class="container mt-4">
+      <h2><span class="red-text">1 Вбивця.</span> <span class="blue-text">4 Вцілілих.</span></h2>
+      <h2>Оберіть сторону.</h2>
+      <p class="mt-4 text-center">Кожен персонаж має унікальний набір здібностей. Ознайомтеся з повним списком вбивць і вцілілих у Dead by Daylight нижче.</p>
+    </div>
+    <div class="container mt-5">
+      <ul class="nav nav-tabs nav-fill gap-3 mt-3" id="charactersTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link nav-killers active" id="killers" data-bs-toggle="tab" data-bs-target="#killers-pane" type="button" role="tab" aria-controls="killers-pane" aria-selected="true">Вбивці</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link nav-survivors" id="survivors" data-bs-toggle="tab" data-bs-target="#survivors-pane" type="button" role="tab" aria-controls="survivors-pane" aria-selected="false">Вцілілі</button>
+        </li>
+      </ul>
+    </div>
+    <div class="tab-content" id="charactersTabsContent">
+      <div class="tab-pane fade show active my-3" id="killers-pane" role="tabpanel" aria-labelledby="killers" tabindex="0">
+        <div class="container">
+          <div class="row mt-5 px-3 px-sm-0">
+            <h4 class="mt-3 text-uppercase red-text">Захоплююче полювання</h4>
+            <p>Увімкніть свою бензопилу, встановіть пастки на ведмедів, станьте невидимими та багато іншого. Практичний чи надприродний, кожен вбивця має унікальну силу, якою можна володіти, коли ви полюєте на тих, хто вижив, і приносите їх у жертву Сутності.</p>
+            <h4 class="mt-3 text-uppercase red-text">Непередбачувана для всіх гра</h4>
+            <p>Відчуйте хвилювання невідомого кожного разу, коли ви граєте. Усі мапи генеруються процедурно, а всі точки появи рандомізовані, тому Вбивці та Вцілілі ніколи не знають, чого очікувати.</p>
+            <h4 class="mt-3 text-uppercase red-text">Прогрес винагород</h4>
+            <p>Досягайте цілей, підвищуйте рівень своїх персонажів і заробляйте очки крові в кожному випробуванні, щоб розблокувати нові потужні предмети, підношення, навички, доповнення до спорядження тощо</p>
+          </div>
+          <div class="row mx-auto px-4 px-sm-0 my-5 ratio ratio-16x9 characters-video">
+            <iframe src="https://www.youtube.com/embed/38YcYajoN7g?si=nJCZvVk9Wwimd64Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="container container-custom">
+          <div class="row">
+            <div class="col-12 my-4 col-md-6 col-4-custom characters-info mx-md-2 p-0">
+              <img class="img-fluid characters-img" src="images/trapper.png" alt="trapper">
+              <h6 class="p-4">Мисливець</h6>
+              <p class="characters-text px-4">Озброєний мішком пасток для ведмедів, Мисливець спеціалізується на ловлі нічого не підозрюючих вцілілих. Розставляючи пастки в місцях з інтенсивним рухом людей і густою травою, він створює смертоносну зону, яка змушує Вцілілих рухатися з обережністю. Коли маєте справу з Мисливцем, простий помилковий крок може виявитися фатальним.</p>
+              <h6 class="px-4">Навички</h6>
+              <div class="row px-4 mb-4">
+                <div class="d-flex justify-content-center gap-3">
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Неспокій" data-bs-content="Дозволяє вбивці рухатися швидше та долати більші відстані, несучи вцілілих. Перенесення вцілілих також збільшує радіус терору.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_agitation.webp" alt="agitation">
+                  </span>
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Лякаюча присутність" data-bs-content="Вцілілі, у вашому радіусі Терору, зіткнуться зі складною перевіркою реакції під час ремонту та лікування.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_unnervingPresence.webp" alt="unnervingPresence">
+                  </span>
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Звіряча сила" data-bs-content="Прискорює процес руйнування піддонів і стін, а також пошкодження генераторів.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_brutalStrength.webp" alt="brutalStrength">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 my-4 col-md-6 col-4-custom characters-info mx-md-2 p-0">
+              <img class="img-fluid characters-img" src="images/wrath.png" alt="wrath">
+              <h6 class="p-4">Привид</h6>
+              <p class="characters-text px-4">Використовуючи свій Плачучий дзвін, щоб зробити себе невидимим, Привид вистежує свою здобич і завдає удару без попередження. Почувши доленосний дзвін, вцілілі повинні швидко подумати або понести наслідки. Спеціаліст із нападів і переслідувань, Привид уміє утримувати всіх пораненими.</p>
+              <h6 class="px-4">Навички</h6>
+              <div class="row px-4 mb-4">
+                <div class="d-flex justify-content-center gap-3">
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Хижак" data-bs-content="Сліди тріщин, що залишають вцілілі, з’являються ближче один до одного, що дозволяє більш ефективно відстежувати.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_predator.webp" alt="predator">
+                  </span>
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Шукач" data-bs-content="Калюжі крові, залишені пораненими вцілілими, яскраво сяють на землі, полегшуючи пошук.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_bloodhound.webp" alt="bloodhound">
+                  </span>
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Дітище темряви" data-bs-content="Розширте поле зору для кращої видимості, що допоможе відстежувати невловимих вцілілих.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_shadowborn.webp" alt="shadowborn">
+                  </span>
+                </div>
+              </div>
+            </div>  
+            <div class="col-12 my-4 col-md-6 col-4-custom characters-info mx-md-2 p-0">
+              <img class="img-fluid characters-img" src="images/hillbilly.png" alt="hillbilly">
+              <h6 class="p-4">Селюк</h6>
+              <p class="characters-text px-4">Гуркіт мотора бензопили, а потім кровожерливий крик люті. Селюк не зовсім витончений, але він компенсує це жорстокою ефективністю. Здатний долати великі відстані у швидкому темпі, ті, хто на його шляху, будуть грубо познайомлені зі сотнею скреготящих лез бензопили.</p>
+              <h6 class="px-4">Навички</h6>
+              <div class="row px-4 mb-4">
+                <div class="d-flex justify-content-center gap-3">
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Стійкий" data-bs-content="Станьте стійким до болю. Швидко відновлюйтеся після оглушення піддонами, дозволяючи витримувати тиск під час переслідування.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_enduring.webp" alt="enduring">
+                  </span>
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Дітище світла" data-bs-content="Станьте повністю несприйнятливими до осліплюючого ефекту ліхтариків, вибухових мін і світлошумових гранат. Ідеально підходить для того, щоб зненацька застати вцілілих із ліхтариком.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_lightborn.webp" alt="lightborn">
+                  </span>
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Умілець" data-bs-content="Отримуйте сповіщення щоразу, коли ремонт генератору майже досягає завершення. Після активації навички, радіус терору та червона світіння вимикаються на деякий час, що дозволяє вам наблизитися до нічого не підозрюючих вцілілих.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_tinkerer.webp" alt="tinkerer">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 my-4 col-md-6 col-4-custom characters-info mx-md-2 p-0">
+              <img class="img-fluid characters-img" src="images/nurse.png" alt="nurse">
+              <h6 class="p-4">Медсестра</h6>
+              <p class="characters-text px-4">Використовуючи свою здатність стрибків, Медсестра може миттєво телепортуватися на великі відстані, передбачаючи та відсікаючи маршрути вцілілих. Потужний процес, найкраще відточений досвідом, оскільки необережні стрибки караються періодом втоми. Медсестра, втілення високого ризику та високої винагороди, може завершити погоню з хірургічною точністю.</p>
+              <h6 class="px-4">Навички</h6>
+              <div class="row px-4 mb-4">
+                <div class="d-flex justify-content-center gap-3">
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Стридор" data-bs-content="Почуйте дихання та хрипіння вцілилих голосніше, ніж будь-коли.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_stridor.webp" alt="stridor">
+                  </span>
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Танатофобія" data-bs-content="Кожен поранений вцілілий накладає штраф на швидкість ремонту, очищення та саботування для всієї команди">
+                    <img class="img-fluid perks-img" src="images/IconPerks_thatanophobia.webp" alt="thanatophobia">
+                  </span>
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Поклик медсестри" data-bs-content="Розкрийте аури всіх вцілилих, які лікують або лікуються поблизу вас.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_aNursesCalling.webp" alt="aNursesCalling">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 my-4 col-md-6 col-4-custom characters-info mx-md-2 p-0">
+              <img class="img-fluid characters-img" src="images/huntress.png" alt="huntress">
+              <h6 class="p-4">Мисливиця</h6>
+              <p class="characters-text px-4">Озброєна метальними сокирами, Мисливиця є постійною загрозою для вцілілих, навіть тих, хто перебуває на великій відстані. З витримкою і точністю погоні можуть закінчитися так само швидко, як і почалися. Передбачте рух вцілілих і дозвольте своїй сокирі полетіти – немає нічого кращого за крик ураженої цілі.</p>
+              <h6 class="px-4">Навички</h6>
+              <div class="row px-4 mb-4">
+                <div class="d-flex justify-content-center gap-3">
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Хижий звір" data-bs-content="Увійшовши в стан Жаги крові, ви втратите радіус терору та червону світіння, що ускладнить вцілілим передбачити ваші дії під час переслідування.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_BeastOfPrey.webp" alt="BeastOfPrey">
+                  </span>
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Територіальний імператив" data-bs-content="Перебуваючи на відстані, спостерігайте за аурою будь-якого вцілілого, що заходить у підвал, роблячи й без того небезпечне місце ще смертельнішим.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_TerritorialImperative.webp" alt="TerritorialImperative">
+                  </span>
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Причина: Колискова Мисливиці" data-bs-content="Створює тотем з причиною. Отримайте 1 жетон після того, як повішаєте вцілілого, максимум жетонів - 5. Кожен жетон збільшує складність перевірки реакції для вцілілих, при цьому 5 жетон повністю прибирає аудіосповіщення. Невдалі перевірки реакції спричиняють суворе покарання регресії. Усі ефекти зникають, коли тотем очищено.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_HuntressLullaby.webp" alt="HuntressLullaby">
+                  </span>
+                </div>                
+              </div>
+            </div>  
+            <div class="col-12 my-4 col-md-6 col-4-custom characters-info mx-md-2 p-0">
+              <img class="img-fluid characters-img" src="images/myers.png" alt="myers">
+              <h6 class="p-4">Тінь</h6>
+              <p class="characters-text px-4">Тінь ховається вдалині, терпляче чекаючи свого часу. Його зло зростає, переслідуючи тих, хто вижив, підживлюючи його зловмисною силою. По ходу випробування Тінь еволюціонує від тихої загрози до нестримної непереборної сили, здатної пронизати навіть найстійкіші команди.</p>
+              <h6 class="px-4">Навички</h6>
+              <div class="row px-4 mb-4">
+                <div class="d-flex justify-content-center gap-3">
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Залиште найкраще наостанок" data-bs-content="Станьте одержимим одним вцілілим. Отримайте жетони за удари базовою атакою по вцілілих, окрім Одержимості, загалом до 8. Втрачайте жетони за удари по Одержимості. Більше жетонів призводять до швидшого відновлення після успішних атак.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_saveTheBestForLast.webp" alt="saveTheBestForLast">
+                  </span>
+                  <span class="d-inline-block popover-killer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Пограйте зі своєю жертвою" data-bs-content="Станьте одержимим одним вцілілим. Щоразу, коли ви переслідуєте свою Одержимість і дозволяєте їй втекти, отримуйте жетон, до 3 штук. Кожен жетон збільшує швидкість руху. 1 жетон втрачається після атаки.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_playWithYourFood.webp" alt="playWithYourFood">
+                  </span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Згасаюче світло" data-bs-content="Станьте одержимим одним вцілілим. Отримайте жетони за повішання тих, хто не є Одержимістю. Кожен жетон зменшує швидкість ремонту, лікування та саботажу для тих, хто не є Одержимістю. Одержимість не штрафується, натомість отримує бонус швидкості дії до звільнення та лікування.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_dyingLight.webp" alt="dyingLight">
+                  </span>
+                </div>
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade my-3" id="survivors-pane" role="tabpanel" aria-labelledby="survivors" tabindex="0">
+        <div class="container">
+          <div class="row mt-5 px-3 px-sm-0">
+            <h4 class="mt-3 text-uppercase blue-text">Разом виживати краще</h4>
+            <p>Ви будете лідером? Станете героєм? Опануєте мистецтво втечі? Відкрийте для себе навички кожного з Вцілілих, і станьте останнім, хто вижив, або, що ще краще, причиною, по якій виживе уся команда.</p>
+            <h4 class="mt-3 text-uppercase blue-text">Непередбачувана для всіх гра</h4>
+            <p>Відчуйте хвилювання невідомого кожного разу, коли ви граєте. Усі мапи генеруються процедурно, а всі точки появи рандомізовані, тому Вбивці та Вцілілі ніколи не знають, чого очікувати.</p>
+            <h4 class="mt-3 text-uppercase blue-text">Прогрес винагород</h4>
+            <p>Досягайте цілей, підвищуйте рівень своїх персонажів і заробляйте очки крові в кожному випробуванні, щоб розблокувати нові потужні предмети, підношення, навички, доповнення до спорядження тощо</p>
+          </div>
+          <div class="row mx-auto px-4 px-sm-0 my-5 ratio ratio-16x9 characters-video">
+            <iframe src="https://www.youtube.com/embed/vDcEdoR7Rh0?si=L6SApkTSxLzMVhwC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="container container-custom">
+          <div class="row">
+            <div class="col-12 my-4 col-md-6 col-4-custom characters-info mx-md-2 p-0">
+              <img class="img-fluid characters-img" src="images/dwight.png" alt="dwight">
+              <h6 class="p-4">Дуайт Фейрфілд</h6>
+              <p class="characters-text px-4">Дуайт Фейрфілд, незвичайний лідер, змушений відповідати обставинам, надихає оточуючих своєю хоробрістю. Розуміючи цінність командної роботи, Дуайт вміє знаходити та підвищувати ефективність своїх товаришів по команді.</p>
+              <h6 class="px-4">Навички</h6>
+              <div class="row px-4 mb-4">
+                <div class="d-flex justify-content-center gap-3">
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Зв'язок" data-bs-content="Розкрийте аури всіх вцілилих поблизу, щоб ефективно спланувати свій наступний крок.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_bond.webp" alt="bond">
+                  </span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Прояви себе" data-bs-content="Збільште швидкість ремонту кожному вцілілому, включаючи вас, який ремонтує генератори поблизу вас.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_proveThyself.webp" alt="proveThyself">
+                  </span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Лідер" data-bs-content="Забезпечте товаришів поблизу підвищенням швидкості лікування, саботування, знімання, очищення, відкриття скринь і відкриття воріт.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_leader.webp" alt="leader">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 my-4 col-md-6 col-4-custom characters-info mx-md-2 p-0">
+              <img class="img-fluid characters-img" src="images/meg.png" alt="meg">
+              <h6 class="p-4">Мег Томас</h6>
+              <p class="characters-text px-4">Спонукана безрозсудною сміливістю, спортивна Мег Томас ніколи не боялася розширювати свій потенціал. Схильна до активіного життя, Мег в захваті від того, що спонукає вбивць до тривалих погонь, виграючи час для своїх товаришів по команді.</p>
+              <h6 class="px-4">Навички</h6>
+              <div class="row px-4 mb-4">
+                <div class="d-flex justify-content-center gap-3">
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Швидко і тихо" data-bs-content="Шум, який створюється під час швидкого перестрибування перешкод і ховання у шафках, повністю заглушено, що дезорієнтує вбивцю під час переслідування.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_quickAndQuiet.webp" alt="quickAndQuiet">
+                  </span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Спринтер" data-bs-content="У той момент, коли ви починаєте бігти, активується спринт, що збільшує швидкість на короткий час. Використання навички залишає вас виснаженим. Цю навичку не можна активувати знову, доки ви виснажені.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_sprintBurst.webp" alt="sprintBurst">
+                  </span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Адреналін" data-bs-content="Коли на вихідні ворота подано живлення, миттєво виліковується один стан здоров’я та надається спринт. Якщо під час активації адреналіну вбивця несе вас або ви повішені, зцілення відбудеться в момент звільнення. Викликає ефект Виснаження, хоча адреналін все одно активується, якщо ви вже були виснажені">
+                    <img class="img-fluid perks-img" src="images/IconPerks_adrenaline-0.webp" alt="adrenaline">
+                  </span>
+                </div>
+              </div>
+            </div>  
+            <div class="col-12 my-4 col-md-6 col-4-custom characters-info mx-md-2 p-0">
+              <img class="img-fluid characters-img" src="images/claudette.png" alt="claudette">
+              <h6 class="p-4">Клодетт Морель</h6>
+              <p class="characters-text px-4">Клодетт розуміє цінність альтруїзму, використовуючи свої здібності до ботаніки, щоб переконатися, що її товариші по команді готові до майбутніх викликів. Досвідчена цілителька для інших і для себе, її присутність завжди вітається.</p>
+              <h6 class="px-4">Навички</h6>
+              <div class="row px-4 mb-4">
+                <div class="d-flex justify-content-center gap-3">
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Емпатія" data-bs-content="Розкрийте аури всіх поранених і вмираючих вцілилих поблизу вас, що дозволяє вам ефективно лікувати товаришів по команді, які потребують допомоги.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_empathy.webp" alt="empathy">
+                  </span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Знання ботаніки" data-bs-content="Збільште швидкість лікування та ефективність медичних предметів, заощадивши дорогоцінний час.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_botanyKnowledge.webp" alt="botanyKnowledge">
+                  </span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Сам собі лікар" data-bs-content="Розблокуйте здатність до самолікування без лікувального предмета, хоча й зі зниженою швидкістю. Підвищує ефективність лікувальних предметів під час самолікування.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_selfCare.webp" alt="selfCare">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 my-4 col-md-6 col-4-custom characters-info mx-md-2 p-0">
+              <img class="img-fluid characters-img" src="images/jake.png" alt="jake">
+              <h6 class="p-4">Джейк Парк</h6>
+              <p class="characters-text px-4">Фахівець-одинак . Проведений час у дикій природі загострив його інстинкт виживання. Непомітний і винахідливий, єдиною ознакою його присутності є саботовані гаки, які він залишає позаду.</p>
+              <h6 class="px-4">Навички</h6>
+              <div class="row px-4 mb-4">
+                <div class="d-flex justify-content-center gap-3">
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Залізна воля" data-bs-content="Під час поранення ваші крики болю значно тихіші, тому вас важко знайти та відстежити.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_ironWill.webp" alt="ironWill">
+                  </span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Спокій духу" data-bs-content="Значно збільшує ймовірність того, що ворони не буде налякані вашою присутністю. Крім того, ваша стійкість завжди шанс закричати.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_calmSpirit.webp" alt="calmSpirit">
+                  </span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Диверсія" data-bs-content="Коли вбивця підбирає вцілілого, розкривається аура кожного гака поблизу. Гаки тепер можна саботувати без інструментів, що полегшує порятунок в останню хвилину.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_saboteur2.webp" alt="saboteur">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 my-4 col-md-6 col-4-custom characters-info mx-md-2 p-0">
+              <img class="img-fluid characters-img" src="images/bill.png" alt="bill">
+              <h6 class="p-4">Вільям "Білл" Овербек</h6>
+              <p class="characters-text px-4">Загартований роками досвіду, Білл Овербек знає, що виживання рідко обходиться без жертв. Незалежно від ціни, він подбає про те, щоб його товариші по команді дожили до наступного бою. Це був би не перший раз, коли його залишили б померти.</p>
+              <h6 class="px-4">Навички</h6>
+              <div class="row px-4 mb-4">
+                <div class="d-flex justify-content-center gap-3">
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Залишений позаду" data-bs-content="Коли ви залишились останні у живих, аура люка розкривається вам, перебуваючи поблизу нього.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_leftBehind.webp" alt="leftBehind">
+                  </span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Запозичений час" data-bs-content="Після порятунку вцілілого з гаку цей вцілілий отримує ефект Стійкості — здатність безпечно приймати удари протягом короткого часу. Щоб не впасти після такого удару, вцілілий повинен витратити час, щоб залікувати глибоку рану.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_borrowedTime.webp" alt="borrowedTime">
+                  </span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Незламний" data-bs-content="Минулі битви навчили вас дечому про виживання. Один раз за гру можна відновитись після падіння без допомоги напарника.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_unbreakable.webp" alt="unbreakable">
+                  </span>
+                </div>
+              </div>
+            </div>  
+            <div class="col-12 my-4 col-md-6 col-4-custom characters-info mx-md-2 p-0">
+              <img class="img-fluid characters-img" src="images/nea.png" alt="nea">
+              <h6 class="p-4">Нея Карлсон</h6>
+              <p class="characters-text px-4">Роки переховування від влади та орієнтування вулицями Швеції тримали невловиму Нею Карлсон на крок попереду. Здатна втекти в будь-яких ситуаціях, її котяча спритність знову й знову виручала її з неприємностей.</p>
+              <h6 class="px-4">Навички</h6>
+              <div class="row px-4 mb-4">
+                <div class="d-flex justify-content-center gap-3">
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="М'яке приземлення" data-bs-content="Ваша спритність і котячі рефлекси незрівнянні. Отримуйте спринт після падіння з великої висоти, забезпечуючи собі величезну відстань від вбивці. Використання м'якого приземлення спричиняє виснаження, тому його не можна активувати під час виснаження.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_balancedLanding.webp" alt="balancedLanding">
+                  </span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Міський біг" data-bs-content="Роки втеч від копів навчили вас дечого про скритність. Рухайтесь значно швидше, присівши.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_urbanEvasion.webp" alt="urbanEvasion">
+                  </span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-title="Вулична мудрість" data-bs-content="Довгі ночі на вулиці навчили вас отримувати багато від того, що ви маєте. Предмети, якими користуєтеся ви та вцілилі поблизу вас, витрачатимуться повільніше.">
+                    <img class="img-fluid perks-img" src="images/IconPerks_streetwise.webp" alt="streetwise">
+                  </span>
+                </div>
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+		<div class="container-fluid">
+			<footer class="mt-3">
+				<div class="row p-3 bg-black text-center">
+					<p class="pt-3" style="font-size: 16px; color: white;">Сергій Казаков, КІ-41</p>
+				</div>
+			</footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
